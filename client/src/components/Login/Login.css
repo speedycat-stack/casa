@@ -1,0 +1,161 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../../assets/enfants.png'); 
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  background-position: 0 0;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  background-attachment: local;
+}
+.login-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('motif.svg');
+  z-index: -1;
+}
+
+.login-form {
+  background-color: #fff; 
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-form h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 19px;
+  font-size: 16px;
+}
+
+.login-form .login-btn {
+  width: 27%;
+  padding: 12px;
+  background-color: #7FB5FF;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login-form .login-btn:hover {
+  background-color: #6a9bd1; 
+}
+
+.social-icons {
+  display: flex;
+  padding: 25px;
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.social-icon {
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff; 
+  border: 1px solid #a7a6a6; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+  cursor: pointer;
+}
+
+.social-icon img {
+  width: 60%;
+  height: 60%; 
+
+}
+
+.footer p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: BLACK;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+@media (min-width: 1440px) {
+  .login-form {
+      max-width: 400px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .login-form {
+      max-width: 350px;
+      padding: 20px;
+  }
+
+  .login-form h2 {
+      font-size: 24px;
+  }
+
+  .login-form input {
+      font-size: 14px;
+  }
+
+  .login-form .login-btn {
+      width: 50%;
+  }
+}
+
+
+@media (max-width: 812px) {
+  .login-form {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  .login-form h2 {
+      font-size: 22px;
+  }
+
+  .login-form input {
+      font-size: 14px;
+  }
+
+  .login-form .login-btn {
+      width: 100%;
+  }
+
+  .social-icons {
+      padding: 15px;
+  }
+
+  .social-icon {
+      width: 35px; 
+      height: 35px;
+  }
+}
